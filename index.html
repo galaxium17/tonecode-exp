@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToneCode主観評価実験用音源</title>
+    <style>
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 40px;
+            color: #444;
+        }
+        .track-box {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .track-box:last-child {
+            border-bottom: none;
+        }
+        .track-title {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+            display: block;
+        }
+        audio {
+            width: 100%;
+            height: 40px;
+        }
+        .instruction {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>可聴型データハイディングToneCodeに関する<br>主観評価実験</h1>
+    <p class="instruction">以下の楽曲（A～H）を聴き、アンケートフォームの指示に従って回答してください。</p>
+
+    <div class="track-box">
+        <span class="track-title">曲A</span>
+        <audio controls controlsList="nodownload">
+            <source src="song_a.wav" type="audio/mpeg">
+            お使いのブラウザはオーディオ再生に対応していません。
+        </audio>
+    </div>
+
+    <div class="track-box">
+        <span class="track-title">曲B</span>
+        <audio controls controlsList="nodownload">
+            <source src="song_b.wav" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="track-box">
+        <span class="track-title">曲C</span>
+        <audio controls controlsList="nodownload">
+            <source src="song_c.wav" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="track-box">
+        <span class="track-title">曲D</span>
+        <audio controls controlsList="nodownload">
+            <source src="song_d.wav" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="track-box">
+        <span class="track-title">曲E</span>
+        <audio controls controlsList="nodownload">
+            <source src="song_e.wav" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="track-box">
+        <span class="track-title">曲F</span>
+        <audio controls controlsList="nodownload">
+            <source src="song_f.wav" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="track-box">
+        <span class="track-title">曲G</span>
+        <audio controls controlsList="nodownload">
+            <source src="song_g.wav" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="track-box">
+        <span class="track-title">曲H</span>
+        <audio controls controlsList="nodownload">
+            <source src="song_h.wav" type="audio/mpeg">
+        </audio>
+    </div>
+
+</div>
+
+</body>
+</html>
