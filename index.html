@@ -103,9 +103,9 @@
     // 拡張子
     const EXTENSION = ".wav"; 
     // 曲リスト
-    const SONGS = ["A", "B", "C", "D", "E", "F", "G", "H"];
+    const SONGS = ["A", "B", "C", "D", "E", "F", "G", "H", "I"];
     // バリエーション数
-    const VAR_COUNT = 8;
+    const VARIATIONS = [1, 2, 3, 7, 9, 12, 13, 14, 15];
 
 
     function startExperiment() {
@@ -123,17 +123,13 @@
 
         const rng = mulberry32(userId);
 
-        let variations = [];
-        for (let i = 1; i <= VAR_COUNT; i++) {
-            variations.push(i);
-        }
-        shuffle(variations, rng);
+        shuffle(VARIATIONS, rng);
 
         const playlistDiv = document.getElementById('playlist');
         playlistDiv.innerHTML = "";
 
         SONGS.forEach((songName, index) => {
-            const variantNum = variations[index]; 
+            const variantNum = VARIATIONS[index]; 
             const songChar = songName.toLowerCase();
 
             const fileName = `song_${songChar}_${variantNum}${EXTENSION}`;
